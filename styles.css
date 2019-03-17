@@ -1,4 +1,6 @@
-html {overflow-x: hidden;}
+html {
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -21,7 +23,6 @@ nav {
     padding-left: 15px;
     font-size: 15px;
     list-style-type: none;
-
 }
 
 .searchicon:hover {
@@ -29,13 +30,14 @@ nav {
     color: rgb(95, 95, 95);
 }
 
-#searchlink{
+#searchlink {
     color: black;
     font-size: 20px;
     position: fixed;
     top: 13px;
     right: 40px;
-text-decoration: none;}
+    text-decoration: none;
+}
 
 #navlist {
     list-style-type: none;
@@ -78,7 +80,7 @@ text-decoration: none;}
     padding-top: 12px;
 }
 
-#hamburger{
+#hamburger {
     color: black;
     font-size: 18px;
     position: fixed;
@@ -87,7 +89,7 @@ text-decoration: none;}
     display: none;
 }
 
-#hamburger:hover{
+#hamburger:hover {
     color: rgb(95, 95, 95);
     transition: 0.5s;
 }
@@ -131,6 +133,20 @@ text-decoration: none;}
     letter-spacing: 8px;
 }
 
+.contentbottom {
+    position: absolute;
+    height: 80%;
+    /* = 100% - 2*10% padding */
+    width: 90%;
+    /* = 100% - 2*5% padding */
+    padding: 25% 5%;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
 .subtitle {
     font-size: 20px;
     font-weight: 700;
@@ -151,8 +167,8 @@ text-decoration: none;}
 }
 
 .imgbg:hover {
-    filter: opacity(80%);    
-     transition: 0.5s;
+    filter: opacity(80%);
+    transition: 0.5s;
 }
 
 .img2 {
@@ -201,8 +217,13 @@ text-decoration: none;}
     padding-left: 100px;
 }
 
+.formtext {
+    font-size: 16px;
+}
+
 #address {
     padding-left: 100px;
+    font-size: 16px;
 }
 
 b {
@@ -210,33 +231,73 @@ b {
 }
 
 .opendaybutton {
-    padding: 10px;
+    padding-right: 10px;
     height: 50px;
     width: auto;
 }
 
 .opendaytext {
     padding: 0px;
+    font-size: 16px;
 }
 
 .opendayinput {
-    width: 50%;
+    width: 175px;
     height: 30px;
-    border-radius: 100px;
     padding-left: 10px;
     font-family: proxima-nova, sans-serif;
+    background-color: #eeeeee;
+    border: 0px;
+}
+
+.courselink {
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: url("images/coursespagehero.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 10px;
+}
+
+.hero-text {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.hero-text p {
+    padding: 0px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin-top: -40px;
 }
 
 #bookbutton {
-    background-image: linear-gradient(80deg, #dd1212, #c70c0c);
+    background-color: #c70c0c;
     color: white;
     border: none;
-    padding: 7px 50px;
+    padding: 0px 50px;
     font-family: proxima-nova, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    border-radius: 100px;
     display: block;
+    height: 35px;
+    width: 187px;
 }
 
 #footer1 {}
@@ -256,7 +317,104 @@ b {
     /* Should be removed. Only for demonstration */
 }
 
+.coursescolumn {
+    width: 27%;
+    padding: 0% 3%;
+    height: 65px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    /* padding-left: -15px; */
+    /* Should be removed. Only for demonstration */
+}
+
+.coursescolumn p {
+    font-weight: 600;
+}
+
 /* Clear floats after the columns */
+
+.coursesrow {
+    /* background: rgba(91, 255, 126, 0.397); */
+    width: 100%;
+    height: 200%;
+    margin-left: -15%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.graduatebuttons {
+    width: 100%;
+    height: 50px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 10px;
+    background-color: #c050ca;
+    padding-bottom: 20px;
+}
+
+.graduatebuttons:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gradutecolumn {
+    float: left;
+    width: 50%;
+    padding-left: 0px;
+    height: 0px;
+    /* Should be removed. Only for demonstration */
+}
+
+#postgraduate {
+    height: 70px;
+    width: 50%;
+    text-align: center;
+}
+
+#postgraduate:hover {
+    background-color: #7b2a83;
+}
+
+#undergraduate {
+    height: 70px;
+    width: 50%;
+    text-align: center;
+    background-color: #9e32a8;
+}
+
+#undergraduate:hover {
+    background-color: #7b2a83;
+}
+
+#beacon {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0.8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#beacon:hover {
+    transform: scale(1.05);
+}
+
+.course h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.course p {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
 
 .row:after {
     content: "";
@@ -265,13 +423,13 @@ b {
 }
 
 .leftpadding {
-    margin-left: 30px;
+    margin-left: 0px;
 }
 
 .lineheight {
-    padding-top: 0px;
+    padding-top: 1px;
     padding-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0px;
 }
 
@@ -303,6 +461,11 @@ b {
     margin-top: -20px;
 }
 
+.squarebottom {
+    width: 25%;
+    padding-bottom: 25%;
+}
+
 .linkslist li a {
     color: rgb(218, 218, 218);
     text-decoration: none;
@@ -313,23 +476,60 @@ b {
     transition: 0.5s;
 }
 
+#smartopenday {
+    padding-left: 30px;
+    margin-right: -30px;
+}
+
+.courserow {
+    width: 100%;
+}
+
+.course {
+    text-align: center;
+    padding: 1% 15% 3% 15%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600px;
+    color: white;
+    letter-spacing: 10px;
+    width: AUTO;
+}
+
+/* .course:hover {
+    filter: brightness(1.1);
+    transition: 0.5s;
+} */
+
 @media screen and (max-width: 1070px) {
+    .hero-image {
+        padding-top: 120px;
+    }
     .square {
         width: 50%;
         padding-bottom: 50%;
     }
-    #hamburger{
+    #hamburger {
         display: inline;
     }
     #logo {
-       position: fixed;
-       top: 0px;
-       left: 0px;
-       right: 0px;
-       line-height: 27px;
-       display: inline;
-
-
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        line-height: 27px;
+        display: inline-block;
+        /* width: 150%; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        text-align: center;
+    }
+    #logoli {
+        /* width: 10px; */
     }
     #navlist {
         position: none;
@@ -339,29 +539,20 @@ b {
         background-color: white;
         width: 100%;
         padding-top: 30px;
-
     }
-
-    .subitem{
-    }
-    .subitem2{
+    .subitem {}
+    .subitem2 {
         display: none;
-
     }
-
     /* .subitem.responsive{
         display: none;
     } */
-    
     #navlist li {
         float: none;
         text-align: center;
         line-height: 0;
         padding-top: 30px;
-
-
     }
-    
     #navlist li a {
         display: inline;
         float: none;
@@ -375,27 +566,149 @@ b {
         letter-spacing: 3px;
         padding-top: 15px;
     }
-    
+    .graduatebuttons {
+        width: 100%;
+        height: 120px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 10px;
+        background-color: #c050ca;
+        padding-bottom: 20px;
+        padding-left: 0px;
+    }
+    .graduatebuttons:after {
+        content: "";
+        display: table;
+        clear: both;
+        padding-left: 0px;
+    }
+    .gradutecolumn {
+        float: left;
+        width: 50%;
+        padding-left: 0px;
+        height: 0px;
+        /* Should be removed. Only for demonstration */
+    }
+    #postgraduate {
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #undergraduate {
+        padding-left: 0px;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        background-color: #9e32a8;
+    }
 }
 
 @media screen and (max-width: 730px) {
     .square {
         width: 100%;
-        padding-bottom: 100%;    }
+        padding-bottom: 100%;
+    }
+    .squarebottom {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+    .contentbottom {
+        position: absolute;
+        height: 80%;
+        /* = 100% - 2*10% padding */
+        width: 90%;
+        /* = 100% - 2*5% padding */
+        padding: 25% 5%;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 8px;
+    }
+    .contentbottom p {
+        font-size: 10px;
+    }
 }
+
 @media screen and (max-width: 800px) {
     .column {
         width: 100%;
         padding-left: 50px;
         /* padding-bottom: 50px; */
-
+    }
+    .coursescolumn {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 90px;
     }
     #address {
         padding-left: 0px;
         margin-bottom: -50px;
     }
+    .secondcolumn {
+        margin-bottom: 0PX;
+    }
+    #smartopenday {
+        padding-left: 50px;
+        margin-top: -30px;
+    }
+    .hero-image {
+        padding-top: 330px;
+        margin-bottom: -270px;
+        z-index: -999;
+    }
+    .hero-text {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: proxima-nova, sans-serif;
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+    .hero-text h2 {
+        font-size: 25px;
+    }
+    .course h1 {
+        font-size: 30px;
+    }
+    .course p {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+}
 
-    .secondcolumn{
-        margin-bottom: 100px
+@media screen and (max-width: 600px) {
+    #postgraduate {
+        font-size: 10px;
+    }
+    #undergraduate {
+        font-size: 10px;
+        margin-bottom: -0px;
+        height: 50px;
+    }
+    .graduatebuttons {
+        width: 100%;
+        height: 100px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 10px;
+        background-color: #c050ca;
+        padding-bottom: 0px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+        padding-bottom: 15px;
     }
 }

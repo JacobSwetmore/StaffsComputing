@@ -33,13 +33,14 @@
 <body>
     <nav>
         <ul id="navlist">
+             <li class="subitem subitem2"><a href="STUDENT.html">CURRENT STUDENT</a></li>
             <li class="subitem subitem2"><a href="apply.html">APPLY</a></li>
             <li class="subitem subitem2"><a href="visit.html">VISIT</a></li>
             <li class="subitem subitem2"><a href="STAFFS.HTML">STAFFS</a></li>
             <li class="subitem subitem2"><a href="NEWS.HTML">NEWS</a></li>
             <li class="subitem subitem2"><a href="ALUMNI.HTML">ALUMNI</a></li>
-            <li class="subitem subitem2"><a href="COURSES.HTML">COURSES</a></li>
-            <li style="float:left"><a id="logo" style="font-size: 20px; font-weight: 800;padding-top: 12px;"
+            <li class="subitem subitem2"><a href="courses.html">COURSES</a></li>
+            <li id="logoli" style="float:left"><a id="logo" style="font-size: 20px; font-weight: 800;padding-top: 12px;"
                     href="index.html">SDC</a></li>
 
         </ul>
@@ -49,6 +50,8 @@
         <a id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
 
     </nav>
+
+    <img id="beacon" class="pulse" src="images/beacon.png" alt="Beacon AI">
 
     <!-- <div class="grid-container">
         <div class="grid-item">COURSES</div>
@@ -63,11 +66,34 @@
       </div> -->
 
     <!-- 1st row */ -->
-    <a href="courses">
+    <a href="courses.html">
         <div class="square bg img1 imgbg">
             <div class="content">
                 COURSES
                 <p class="subtitle">EXPLORE OUR WIDE RANGE OF CUTTING EDGE COURSES</p>
+            </div>
+        </div>
+    </a>
+    <a href="visit">
+        <div class="square bg img5 imgbg">
+            <div class="content">
+                VISIT
+                <p class="subtitle">WANT TO FIND OUT WHAT WE'RE ALL ABOUT? BOOK AN OPEN DAY</p>
+            </div>
+        </div>
+    </a>
+    <a href="apply">
+        <div class="square bg img6 imgbg">
+            <div class="content">
+                APPLY<p class="subtitle">STEP INTO YOUR FUTURE. BE #PROUDTOBESTAFFS</p>
+            </div>
+        </div>
+    </a>
+    <a href="staffs">
+        <div class="square bg img4 imgbg">
+            <div class="content">
+                STAFFS
+                <p class="subtitle">WHY STAFFS? FIND OUT WHY WE'RE #PROUDTOBESTAFFS</p>
             </div>
         </div>
     </a>
@@ -89,49 +115,28 @@
         </div>
     </a>
     <!-- 2nd row */ -->
-    <a href="staffs">
-        <div class="square bg img4 imgbg">
-            <div class="content">
-                STAFFS
-                <p class="subtitle">WHY STAFFS? FIND OUT WHY WE'RE #PROUDTOBESTAFFS</p>
-            </div>
-        </div>
-    </a>
-    <a href="visit">
-        <div class="square bg img5 imgbg">
-            <div class="content">
-                VISIT
-                <p class="subtitle">WANT TO FIND OUT WHAT WE'RE ALL ABOUT? BOOK AN OPEN DAY</p>
-            </div>
-        </div>
-    </a>
-    <a href="apply">
-        <div class="square bg img6 imgbg">
-            <div class="content">
-                APPLY<p class="subtitle">STEP INTO YOUR FUTURE. BE #PROUDTOBESTAFFS</p>
-            </div>
-        </div>
-    </a>
+
+   
     <div id="footer">
         <div class="row">
             <div class="column">
                 <img id="staffslogo" src="images/staffordshire_logo.png" alt="Staffordshire University Logo">
-                <p id="address"><b>Staffordshire University</b> <br>College Road <br>University Quarter
+                <p id="address"><b>Staffordshire University</b> <br><b>Department of Computing</b> <br> College Road <br>University Quarter
                     <br>Stoke-on-Trent
                     <br>Staffordshire
                     ST4 2DE <br><b>+44 (0)1782 294000</b></p>
             </div>
-            <div class="column secondcolumn">
-                <p style="padding-top: 10px;" id="opendaytext lineheight"></p>Book an Open Day</p>
+            <div class="column secondcolumn" id="smartopenday" style="">
+                <p style="font-size: 10px; padding-top: 10px;" id="formtext opendaytext lineheight"></p>Book an Open Day</p>
                 <div><img class="opendaybutton leftpadding lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
                     <img class="opendaybutton lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
                     <img class="opendaybutton lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
                 </div>
                 <form action="">
 
-                    <p class="lineheight">Name:</p>
+                    <p class="formtext lineheight">Name:</p>
                     <input class="opendayinput leftpadding lineheight" type="text" name="Name">
-                    <p class="lineheight">Email:</p>
+                    <p class="formtext lineheight">Email:</p>
                     <input class="opendayinput leftpadding lineheight" type="email" name="Email">
                     <button id="bookbutton" style="margin-top: 30px;" class="leftpadding lineheight" type="button">
                         Book
